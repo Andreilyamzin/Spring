@@ -24,11 +24,11 @@ public class BasketController {
         servise.add(ids);
     }
 
- @GetMapping("/get")
+    @GetMapping("/get")
     public Collection<Integer> get() {
-return servise.getAll();
- }
+        return servise.getAll();
+    }
 
 
 
-}
+}//

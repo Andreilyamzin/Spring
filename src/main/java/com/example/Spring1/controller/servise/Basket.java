@@ -1,12 +1,9 @@
-package com.example.Spring1.servise;
+package com.example.Spring1.controller.servise;
 
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.annotation.SessionScope;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 @Component
 @SessionScope
@@ -18,8 +15,8 @@ public class Basket {
         items.addAll(Arrays.asList(ids));
     }
 
-    public Collection<Integer> getAll() {
-        return Collection.unmodifiableSet(items);
+
+    public Collection<Integer> getAll(){
+        return Collections.unmodifiableSet(items);
     }
 }
-

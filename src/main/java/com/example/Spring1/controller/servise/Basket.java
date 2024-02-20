@@ -9,14 +9,18 @@ import java.util.*;
 @SessionScope
 public class Basket {
 
+
     private final Set<Integer> items = new HashSet<>();
+
 
     public void add(Integer... ids) {
         items.addAll(Arrays.asList(ids));
+
     }
 
 
     public Collection<Integer> getAll(){
         return Collections.unmodifiableSet(items);
+
     }
 }

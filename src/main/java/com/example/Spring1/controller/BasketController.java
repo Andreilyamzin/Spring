@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 
+import java.util.Collection;
 import java.util.List;
 
 
@@ -37,9 +38,9 @@ public class BasketController {
 
     @GetMapping("/get")
 
-    public List<Integer> get() {
+    public Collection<Integer> get() {
 
-        return (List<Integer>) service.getAll();
+        return service.getAll();
 
 
     }
